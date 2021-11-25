@@ -1,0 +1,110 @@
+*,*::before,*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}   
+
+
+html {background-color: rgb(54, 49, 49) }
+h1 {
+    text-align: center;
+    color:rgb(186, 211, 214);
+    background-color:rgb(102, 86, 83);
+}
+p {
+    text-align: center;
+}
+#container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    
+}
+.btn {
+    padding:20px 0px;
+    width: 144px;
+    height: 80px;
+    text-align: center;
+    text-shadow:2px 2px 4px rgb(19, 19, 19);
+    color: rgb(247, 231, 246); 
+    font-size: 16px;
+    font-family: "montserrat", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1.5;
+    margin: 10px;
+    box-shadow: 0 0 20px rgb(147, 248, 198);
+    border-radius: 2px;
+    border-color: rgb(247, 243, 245);
+    background-color: rgb(56, 56, 54);
+    background: linear-gradient(-45deg, rgb(61, 76, 80), rgb(78, 167, 125));
+    
+}
+.btn-1 {
+    position:absolute;
+    bottom:0;
+    right:20%;
+}
+.btn-2 {
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+.btn-3 {
+    position:absolute;
+    bottom:0;
+    right:40%;
+}
+.btn-4 {
+    position:absolute;
+    bottom:0;
+    right:60%;
+}
+.gameBoard{
+    position:absolute;
+    display: grid;
+    gap: .5rem;
+    justify-content: center;
+    justify-items: right middle;
+    grid-template-columns: repeat(2, 4rem);
+    grid-template-rows: 7rem 2rem 7rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1200px;
+    height: 600px;
+    margin: 10px;
+    background-color: green;
+    background: linear-gradient(-45deg, rgb(61, 76, 80), rgb(78, 167, 125));
+    
+    
+    
+}
+.playershand{
+    height: 100%;
+    width: 100%;
+    font-size: 3rem;
+    border: 1px solid black;
+    display: flex;
+    justify-content: middle;
+    align-items: center;
+    border-radius: .5rem;
+    color: chartreuse;
+
+}
+@keyframes mymove{
+    from {left: 0rem;}
+    to {left:3rem;}
+}
+.dealershand {
+    animation: mymove 5s infinite;
+    height: 100%;
+    width: 100%;
+    font-size: 3rem;
+    border: 1px solid black;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: .5rem;
+    color:chartreuse
+}
